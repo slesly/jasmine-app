@@ -1,3 +1,11 @@
+## NOTE: Please Setup JSON Server First To Run the Fake API in this project
+
+1- Run Command [npm i] to install node packages
+
+2- Use [npx json-server --watch data/db.json --port 8000] Command to run it before run this project
+
+3- Run [npm run dev] to run nextjs and preiview project
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
