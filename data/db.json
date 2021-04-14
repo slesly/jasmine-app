@@ -238,7 +238,8 @@
         "pink",
         "gray"
       ],
-      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+      "addedToWishlist": false
     },
     {
       "id": 12,

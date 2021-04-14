@@ -217,9 +217,18 @@ const FeatureProductsSection = ({ productCartState, productWishlistState }) => {
                                                     </div>
                                                     <div className="info-product d-flex justify-content-between align-items-center my-3">
                                                         <div className="title">
-                                                            <a href="#">
-                                                                {product.name}
-                                                            </a>
+                                                            <Link
+                                                                href={
+                                                                    "/products/" +
+                                                                    product.id
+                                                                }
+                                                            >
+                                                                <a>
+                                                                    {
+                                                                        product.name
+                                                                    }
+                                                                </a>
+                                                            </Link>
                                                         </div>
                                                         <span className="price">
                                                             {product.price}

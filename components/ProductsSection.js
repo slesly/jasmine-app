@@ -1,4 +1,19 @@
+import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
+
 const ProductsSection = () => {
+    const { urlData: products, productsLoading, productsError } = useFetch(
+        "http://localhost:8000/products"
+    );
+    const [updatedProducts, useUpdatedProducts] = useState([]);
+    useEffect(() => {
+        if (products) {
+            useUpdatedProducts(
+                products.filter((product) => product.featured === false)
+            );
+        }
+    }, [products]);
+
     return (
         <section className="products container">
             <div className="col-lg-4 col-md-6 col-sm-12">
@@ -11,120 +26,42 @@ const ProductsSection = () => {
                     <div className="line"></div>
                 </div>
             </div>
-            <div className="products-wrapper  d-flex justify-content-between flex-wrap">
-                <div
-                    className="products-wrapper_item col-md-6 px-0 d-flex flex-wrap"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="10"
-                >
-                    <div className="products-wrapper_item-text d-flex flex-column justify-content-around col-md-6">
-                        <div>
-                            <a href="#">
-                                <h3>Ultra-Soft Bath Towel</h3>
-                            </a>
-                            <p>
-                                Our panel loved the feel and gave these towels.
-                            </p>
+            {productsLoading && <div className="loading">Loading...</div>}
+            {productsError && <p>{productsError}</p>}
+            {products && (
+                <div className="products-wrapper  d-flex justify-content-between flex-wrap">
+                    {updatedProducts.map((product) => (
+                        <div
+                            className="products-wrapper_item col-md-6 px-0 d-flex flex-wrap"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                            data-aos-delay="10"
+                        >
+                            <div className="products-wrapper_item-text d-flex flex-column justify-content-around col-md-6">
+                                <div>
+                                    <a href={"/products/" + product.id}>
+                                        <h3>{product.name}</h3>
+                                    </a>
+                                    <p>{product.shortDescription}</p>
 
-                            <a href="#" className=" btn btn--underlined">
-                                SHOP NOW
+                                    <a
+                                        href={"/products/" + product.id}
+                                        className=" btn btn--underlined"
+                                    >
+                                        SHOP NOW
+                                    </a>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                className="products-wrapper_item-img  col-md-6  parallax_scroll"
+                            >
+                                <img src={product.image} alt={product.image} />
                             </a>
                         </div>
-                    </div>
-                    <a
-                        href="#"
-                        className="products-wrapper_item-img  col-md-6  parallax_scroll"
-                    >
-                        <img src="./images/towels/product-img/p1.jpg" alt="" />
-                    </a>
+                    ))}
                 </div>
-
-                <div
-                    className="products-wrapper_item col-md-6 px-0 d-flex flex-wrap"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="100"
-                >
-                    <div className="products-wrapper_item-text d-flex flex-column justify-content-around col-md-6">
-                        <div>
-                            <a href="#">
-                                <h3>Textile Experts</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet ipsum</p>
-
-                            <a href="#" className=" btn btn--underlined">
-                                SHOP NOW
-                            </a>
-                        </div>
-                    </div>
-                    <a
-                        href="#"
-                        className="products-wrapper_item-img  col-md-6 parallax_scroll"
-                    >
-                        <img src="./images/towels/product-img/p4.jpg" alt="" />
-                    </a>
-                </div>
-
-                <div
-                    className="products-wrapper_item col-md-6 px-0 d-flex flex-wrap"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="200"
-                >
-                    <div className="products-wrapper_item-text d-flex flex-column justify-content-around col-md-6">
-                        <div>
-                            <a href="#">
-                                <h3>Face cloths</h3>
-                            </a>
-                            <p>
-                                Lorem ipsum dolor sit amet ipsum Lorem ipsum
-                                dolor sit amet ipsum
-                            </p>
-
-                            <a href="#" className=" btn btn--underlined">
-                                SHOP NOW
-                            </a>
-                        </div>
-                    </div>
-                    <a
-                        href="#"
-                        className="products-wrapper_item-img  col-md-6 parallax_scroll"
-                    >
-                        <img src="./images/towels/product-img/p2.jpg" alt="" />
-                    </a>
-                </div>
-
-                <div
-                    className="products-wrapper_item col-md-6 px-0 d-flex flex-wrap"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="300"
-                >
-                    <div className="products-wrapper_item-text d-flex flex-column justify-content-around col-md-6">
-                        <div>
-                            <a href="#">
-                                <h3>Soft Colors</h3>
-                            </a>
-                            <p>
-                                Lorem ipsum dolor sit amet ipsum Lorem ipsum
-                                dolor sit amet ipsum Lorem ipsum dolor sit amet
-                                ipsum
-                            </p>
-
-                            <a href="#" className=" btn btn--underlined">
-                                SHOP NOW
-                            </a>
-                        </div>
-                    </div>
-                    <a
-                        href="#"
-                        className="products-wrapper_item-img  col-md-6 parallax_scroll"
-                    >
-                        <img src="./images/towels/product-img/p3.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
+            )}
         </section>
     );
 };

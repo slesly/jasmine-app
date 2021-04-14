@@ -42,7 +42,7 @@ const Footer = () => {
             {
                 id: 4,
                 name: "Contact us",
-                link: "#",
+                link: "/contact",
             },
         ],
         accountLinks: [

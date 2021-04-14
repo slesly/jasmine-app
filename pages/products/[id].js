@@ -84,12 +84,6 @@ const Details = ({ product }) => {
                                                 ? "far fa-heart active"
                                                 : "far fa-heart"
                                         }
-                                        onClick={() => {
-                                            addToWishlist(
-                                                product.id,
-                                                product.category
-                                            );
-                                        }}
                                     ></em>
                                 </span>
                             </div>
