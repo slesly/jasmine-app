@@ -1,0 +1,339 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "towels",
+      "isActive": true,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "kitchen towels",
+      "isActive": false,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "bed sheets",
+      "isActive": false,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "bath towels",
+      "isActive": false,
+      "featured": false
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "towels",
+      "badge": "Sale",
+      "addedToCart": true,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/products/0.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+      "addedToWishlist": true
+    },
+    {
+      "id": 2,
+      "category": "towels",
+      "badge": "Promotion",
+      "addedToCart": true,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/2.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+      "addedToWishlist": true
+    },
+    {
+      "id": 3,
+      "category": "towels",
+      "badge": "-10%",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/3.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+      "addedToWishlist": false
+    },
+    {
+      "id": 4,
+      "category": "towels",
+      "badge": "Promotion",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/4.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+      "addedToWishlist": false
+    },
+    {
+      "id": 5,
+      "category": "kitchen towels",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 6,
+      "category": "kitchen towels",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+      "addedToWishlist": false
+    },
+    {
+      "id": 7,
+      "category": "kitchen towels",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 8,
+      "category": "kitchen towels",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 9,
+      "category": "bed sheets",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 10,
+      "category": "bed sheets",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 11,
+      "category": "bed sheets",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 12,
+      "category": "bed sheets",
+      "badge": "New",
+      "addedToCart": false,
+      "featured": true,
+      "name": "Jasmine Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    },
+    {
+      "id": 13,
+      "category": "bath towels",
+      "badge": "",
+      "addedToCart": false,
+      "featured": false,
+      "name": "Ultra-Soft Bath Towel",
+      "price": "$590",
+      "image": "/images/towels/product-img/p1.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Our panel loved the feel and gave these towels."
+    },
+    {
+      "id": 14,
+      "category": "towels",
+      "badge": "",
+      "addedToCart": false,
+      "featured": false,
+      "name": "Textile Experts",
+      "price": "$590",
+      "image": "/images/towels/product-img/p4.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet ipsum"
+    },
+    {
+      "id": 15,
+      "category": "towels",
+      "badge": "",
+      "addedToCart": false,
+      "featured": false,
+      "name": "Face cloths",
+      "price": "$590",
+      "image": "/images/towels/product-img/2.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet ipsum Lorem ipsum dolor sit amet ipsum"
+    },
+    {
+      "id": 16,
+      "category": "kitchen towels",
+      "badge": "",
+      "addedToCart": false,
+      "featured": false,
+      "name": "Soft Colors",
+      "price": "$590",
+      "image": "/images/towels/product-img/p3.jpg",
+      "colors": [
+        "white",
+        "purble",
+        "blue",
+        "bage",
+        "pink",
+        "gray"
+      ],
+      "shortDescription": "Lorem ipsum dolor sit amet ipsum Lorem ipsum dolor sit amet ipsum Lorem ipsum dolor sit amet ipsum"
+    }
+  ]
+}

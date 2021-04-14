@@ -1,0 +1,11 @@
+.btnAdd {
+    display: inline-block;
+    font-size: 13px;
+    padding: 4px 15px 5px 16px;
+    border: 1px solid #4c4c4c;
+    border-radius: 27px;
+    overflow: hidden;
+}
+.btnAdd:hover {
+    border: 1px solid #ceae6d;
+}
